@@ -1,0 +1,51 @@
+PS C:\Users\tomme\OneDrive\Documents\MSCS Northeastern\CS 5001\Module 9> & C:/Users/tomme/AppData/Local/Microsoft/WindowsApps/python3.11.exe "c:/Users/tomme/OneDrive/Documents/MSCS Northeastern/CS 5001/Module 9/flight_counter.py"
+Atlantic Southeast Airlines: 2
+American Eagle Airlines Inc.: 2
+United Air Lines Inc.: 2
+Southwest Airlines Co.: 2
+Delta Air Lines Inc.: 2
+Trying:
+    build_counters("flights10.dat", {"AA": "American Airlines",                                               "DL": "Delta Airlines", "UA": "United Airlines"})
+Expecting:
+    {'UA': 2, 'DL': 2}
+ok
+Trying:
+    counters = {"AA": 10, "DL": 5, "UA": 3}
+Expecting nothing
+ok
+Trying:
+    airlines = {"AA": "American Airlines", "DL": "Delta Air Lines Inc.", "UA": "United Air Lines Inc."}
+Expecting nothing
+ok
+Trying:
+    print_counters(counters, airlines)
+Expecting:
+    American Airlines: 10
+    Delta Air Lines Inc.: 5
+    United Air Lines Inc.: 3
+ok
+Trying:
+    counters = {"AA": 0, "DL": 12614, "UA": 87506}
+Expecting nothing
+ok
+Trying:
+    airlines = {"AA": "American Airlines Inc.", "DL": "Delta Air Lines Inc.", "UA": "United Air Lines Inc."}
+Expecting nothing
+ok
+Trying:
+    print_counters(counters, airlines)
+Expecting:
+    American Airlines Inc.: 0
+    Delta Air Lines Inc.: 12,614
+    United Air Lines Inc.: 87,506
+ok
+3 items had no tests:
+    __main__
+    __main__.load_airlines
+    __main__.main
+2 items passed all tests:
+   1 tests in __main__.build_counters
+   6 tests in __main__.print_counters
+7 tests in 5 items.
+7 passed and 0 failed.
+Test passed.
